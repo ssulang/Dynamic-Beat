@@ -229,12 +229,28 @@ public class Game extends Thread{
 	public void dropNotes(String titleName){
 		Beat[] beats= null;
 		if(titleName.equals("ISD - Re:wind") && difficulty.equals("Easy")) {
-			int startTime = 4460 - Main.REACH_TIME * 1000;
+			int startTime = 2000 - Main.REACH_TIME * 1000;
 			int gap = 125;
 			beats = new Beat[] {
 					new Beat(startTime, "S"),
-					new Beat(startTime + gap * 2, "D"),
-					new Beat(startTime + gap * 4, "F"),
+					new Beat(startTime + gap * 2, "Space"),
+					new Beat(startTime + gap * 4, "J"),
+					new Beat(startTime + gap * 8, "D"),
+					new Beat(startTime + gap * 16, "F"),
+					new Beat(startTime + gap * 24, "S"),
+					new Beat(startTime + gap * 36, "K"),
+					new Beat(startTime + gap * 45, "Space"),
+					new Beat(startTime + gap * 55, "D"),
+					new Beat(startTime + gap * 60, "F"),
+					new Beat(startTime + gap * 63, "Space"),
+					new Beat(startTime + gap * 67, "Space"),
+					new Beat(startTime + gap * 73, "K"),
+					new Beat(startTime + gap * 78, "L"),
+					new Beat(startTime + gap * 85, "F"),
+					new Beat(startTime + gap * 90, "S"),
+					new Beat(startTime + gap * 97, "F"),
+					new Beat(startTime + gap * 105, "J"),
+					new Beat(startTime + gap * 111, "K"),
 			};
 		}
 		else if(titleName.equals("ISD - Re:wind") && difficulty.equals("Hard")) {
@@ -255,12 +271,22 @@ public class Game extends Thread{
 					new Beat(startTime, "S"),
 					new Beat(startTime + gap * 2, "Space"),
 					new Beat(startTime + gap * 4, "J"),
-					new Beat(startTime + gap * 8, "Space"),
-					new Beat(startTime + gap * 16, "J"),
-					new Beat(startTime + gap * 24, "Space"),
-					new Beat(startTime + gap * 36, "J"),
+					new Beat(startTime + gap * 8, "D"),
+					new Beat(startTime + gap * 16, "F"),
+					new Beat(startTime + gap * 24, "S"),
+					new Beat(startTime + gap * 36, "K"),
 					new Beat(startTime + gap * 45, "Space"),
-					new Beat(startTime + gap * 55, "J"),
+					new Beat(startTime + gap * 55, "D"),
+					new Beat(startTime + gap * 60, "F"),
+					new Beat(startTime + gap * 63, "Space"),
+					new Beat(startTime + gap * 67, "Space"),
+					new Beat(startTime + gap * 73, "K"),
+					new Beat(startTime + gap * 78, "L"),
+					new Beat(startTime + gap * 85, "F"),
+					new Beat(startTime + gap * 90, "S"),
+					new Beat(startTime + gap * 97, "F"),
+					new Beat(startTime + gap * 105, "J"),
+					new Beat(startTime + gap * 111, "K"),
 					
 			};
 		}
